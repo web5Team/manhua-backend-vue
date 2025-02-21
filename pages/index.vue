@@ -66,9 +66,9 @@ const contact = ref([
           <img src="@/assets/images/pexels-jibarofoto-black-mobile.png"
             class="w-full h-full left-0 top-0 absolute z-[20] hidden max-md:block" alt="">
         </div>
-        <!-- <video class="video-background z-[20] max-md:hidden" autoplay loop muted playsinline>
-          <source src="@/assets/videos/58_1739924586.mp4" type="video/mp4">
-        </video> -->
+        <video class="video-background z-[20] max-md:hidden" autoplay loop muted playsinline>
+          <source src="@/assets/videos/网页视频v2.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="home-intro-content text-[#313341] flex-center flex-col">
         <div
