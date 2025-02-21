@@ -9,8 +9,8 @@ const registrationImgUrl = (index: number) => {
 }
 
 const partnersImgUrl = (index: number) => {
-  const svgFile = [1, 5]
-  if (svgFile.includes(index + 1)) return new URL(`/assets/images/partners-${index + 1}.svg`, import.meta.url).pathname
+  // const svgFile = [1, 5]
+  // if (svgFile.includes(index + 1)) return new URL(`/assets/images/partners-${index + 1}.svg`, import.meta.url).pathname
   return new URL(`/assets/images/partners-${index + 1}.png`, import.meta.url).pathname
 }
 
@@ -216,9 +216,9 @@ const contact = ref([
             {{
               t('awards-3') }}</div>
           <div class="partners">
-            <button v-for="(_, index) in 12" :key="index">
-              <img v-if="index != 4" :src="partnersImgUrl(index)" alt="">
-              <img v-else src="@/assets/images/partners-5.svg" />
+            <button v-for="(_, index) in 24" :key="index">
+              <img :src="partnersImgUrl(index)" alt="">
+              <!-- <img v-else src="@/assets/images/partners-5.svg" /> -->
             </button>
           </div>
         </div>
@@ -413,7 +413,7 @@ const contact = ref([
         @apply flex justify-center items-center w-[154px] h-[56px] py-[9px] rounded-[10px] px-[19px] max-2xl:w-[123px] max-2xl:h-[45px] max-2xl:py-[7px] max-2xl:rounded-[8px] max-2xl:px-[14px] max-xl:w-[103px] max-xl:h-[37px] max-xl:py-[6px] max-xl:rounded-[7px] max-xl:px-[12px] max-lg:w-[82px] max-lg:h-[30px] max-lg:py-[4px] max-lg:rounded-[5px] max-lg:px-[10px] max-md:w-full max-md:h-[41px] max-md:py-[5px] max-md:rounded-[10px] max-md:px-[13px];
 
         img {
-          @apply h-full;
+          @apply max-h-full;
         }
       }
     }
