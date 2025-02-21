@@ -86,7 +86,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 * Node.js(项目使用版本: v20.9.0)
 * npm 或 yarn
-
 * Git
 
 # 3. **项目结构**
@@ -107,9 +106,9 @@ tg-cargame-frontend/
 └── ...
 ```
 
-# 4. ** 打包流程**
+# 4.**打包流程**
 
-## 4.1. ** 安装依赖**
+## 4.1. 安装依赖
 
 **在项目根目录下运行以下命令安装依赖：**
 
@@ -119,8 +118,7 @@ npm install
 yarn install
 ```
 
-
-## 4.2. ** 执行打包**
+## 4.2. 执行打包
 
 **运行以下命令进行打包：**
 
@@ -130,9 +128,8 @@ npm run build
 yarn build
 ```
 
-
 打包完成后，生成的静态文件将位于 `dist/ `目录下。
 
-# 5. ** 部署流程**
+# 5.**部署流程**
 
-将文件夹`dist`目录下所有的文件复制放到服务器对应的文件夹下即可。
+将文件夹 `dist`目录下所有的文件复制放到服务器对应的文件夹下即可。
