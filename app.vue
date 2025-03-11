@@ -36,7 +36,7 @@ const config = reactive({
   locale: copeLanguage()
 })
 useHead({
-  title: 'velosa',
+  title: 'veloza',
   meta: [
     { name: 'description', content: '' },
     { name: 'keywords', content: '' }
