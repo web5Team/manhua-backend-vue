@@ -1,0 +1,242 @@
+body,html,ul {
+    margin: 0;
+    padding: 0;
+}
+.share_page_box .header_box {
+    position: relative;
+    height: 4.77rem;
+    overflow: hidden;
+}
+.share_page_box .header_box .fixed_box {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(276deg, #1F60D6 0%, #2E6EE2 100%);
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+.share_page_box .header_box .fixed_box .l_txt {
+    height: 0.24rem;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #E9F1FF;
+    line-height: 0.24rem;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.share_page_box .header_box .fixed_box .r_btn {
+    width: 1.8rem;
+    height: 0.6rem;
+    background: #FFFFFF;
+    border-radius: 0.3rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.24rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #2E6EE2;
+}
+.share_page_box .header_box .desc_box {
+    padding: 1.85rem 0.24rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.share_page_box .header_box .desc_box .f_txt {
+    height: 0.48rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.48rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.2rem;
+}
+.share_page_box .header_box .desc_box .s_txt {
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.24rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 1.4rem;
+}
+.share_page_box .header_box .desc_box .num_txt {
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.24rem;
+    margin-bottom: 0.6rem;
+}
+.share_page_box .header_box .bg_img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-height: 110%;
+    object-fit: cover;
+}
+.share_page_box .main_box {
+    background: #fff;
+    border-radius: 0.25rem 0.25rem 0 0;
+    margin-top: -0.2rem;
+    position: relative;
+    z-index: 2;
+}
+.share_page_box .main_box .video_list {
+    padding: 0.3rem 0.24rem 0;
+}
+.share_page_box .main_box .video_list li {
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+.share_page_box .main_box .video_list li .l_box {
+    position: relative;
+    margin-right: 0.2rem;
+}
+.share_page_box .main_box .video_list li .l_box img {
+    width: 1.65rem;
+    height: 2.2rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.08rem;
+    overflow: hidden;
+}
+.share_page_box .main_box .video_list li .l_box .score_num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.57rem;
+    height: 0.36rem;
+    background: linear-gradient(180deg, #515151 0%, #2B2F35 100%);
+    border-radius: 0.08rem 0rem 0.25rem 0rem;
+    opacity: 0.2;
+    font-size: 0.2rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    line-height: 0.36rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+.share_page_box .main_box .video_list li .c_box {
+    margin-right: 0.4rem;
+    flex: 1;
+    overflow: hidden;
+}
+.share_page_box .main_box .video_list li .c_box .name_txt {
+    height: 0.45rem;
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #222222;
+    line-height: 0.45rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.16rem;
+}
+.share_page_box .main_box .video_list li .c_box .sec_box {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 0.4rem;
+    margin-bottom: 0.12rem;
+}
+.share_page_box .main_box .video_list li .c_box .sec_box .t_txt {
+    height: 0.4rem;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.4rem;
+}
+.share_page_box .main_box .video_list li .c_box .sec_box .line_txt {
+    margin: 0 0.12rem;
+    height: 80%;
+    width: 1px;
+    background-color: #666666;
+}
+.share_page_box .main_box .video_list li .c_box .label_txt {
+    height: 0.37rem;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.37rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0.33rem;
+}
+.share_page_box .main_box .video_list li .c_box .num_total {
+    height: 0.37rem;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.37rem;
+}
+.share_page_box .main_box .video_list li .r_box { 
+    display: flex;
+    align-items: center;
+}
+.share_page_box .main_box .video_list li .r_box img {
+    width: 0.58rem;
+    height: 0.58rem;
+    display: block;
+}
+.share_page_box .download_btn {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0.71rem;
+    display: none;
+    transition: all 0.3s;
+}
+.share_page_box .download_btn span {
+    width: 3.02rem;
+    height: 0.9rem;
+    background: linear-gradient(276deg, #1F60D6 0%, #2E6EE2 100%);
+    border-radius: 0.45rem;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.page_mask_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.page_mask_box img {
+    width: 5.92rem;
+    height: 4.02rem;
+    display: block;
+    margin: 1.99rem auto 0;
+}

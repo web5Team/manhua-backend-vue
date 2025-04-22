@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 13px;
+        }
+
+        body {
+            font-size: 1.2rem;
+        }
+
+        .background {
+            margin:0px;
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+        .content {
+            width: 100%;
+        }
+
+        .box {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .txPic {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .name {
+            font-size:17px;
+            color:rgba(254,254,254,1);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .edition {
+            display: block;
+            font-size:40px;
+            font-family:PingFang SC;
+            font-weight:250;
+            color:rgba(254,254,254,1);
+            line-height:40px;
+            margin-top: 30px;
+            letter-spacing: 30px;
+            text-align: center;
+        }
+
+        .contenttext1 {
+            font-size:10px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(254,254,254,1);
+            line-height:30px;
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .contenttext2 {
+            font-size:10px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(254,254,254,1);
+            line-height:30px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .list p {
+            width: 100%;
+        }
+
+        .list img {
+            width: 7px;
+            height: 13px;
+        }
+
+        /* icon */
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body background="img/background.png" class="background">
+    <div class="content">
+        <div class="box">
+            <img src="img/shareLogo.png" class="txPic">
+            <p class="name">爱 趣 小 说</p>
+            <div class="edition">有你想看</div>
+            <div class="contenttext1"><p>亲爱的用户</p>
+                如果您在使用我们的产品时遇到任何问题，请随时与我们联系，我们将全力全意为您解决！请发邮件与我们联系，我们将24小时为您服务！
+                <p>邮箱地址：<span class="email_p">aiqu6868@outlook.com</span></p>
+                <p>谢谢</p>
+            </div>
+            <div class="contenttext2"><p>Dear user</p>
+                If you encounter any problems when using our products,
+                please feel free to contact us, we will try our
+                best to solve for you!
+                Please email us, we will serve you 24 hours a day!
+                <p>Email address: <span class="email_p">aiqu6868@outlook.com</span></p>
+                <p>thank you</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/iconfont.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/base64.js"></script>
+<script src="js/email.js"></script>
+<script src="js/subject.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function(){
+    	getBaseImg()
+	    $('.name').text(name)
+        Object.keys(emailEnum).forEach(i => {
+          if (Number(i) == Number(appid)) {
+	          $('.email_p').text(emailEnum[i])
+          }
+        })
+        if (Number(platformid) === 3) {
+          $(".txPic").hide()
+        }
+        $('.txPic').attr('src', img)
+    })
+</script>

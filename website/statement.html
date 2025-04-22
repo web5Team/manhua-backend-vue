@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="target-densitydpi=286, width=640, user-scalable=no" />
+	<title>版权声明</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="css/css.css" rel="stylesheet" />
+	<link rel="stylesheet" href="touchTouch/touchTouch.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+
+	<style type="text/css">
+		p {
+			text-indent: 2em;
+		}
+	</style>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/base64.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/email.js"></script>
+</head>
+
+<body>
+	<div class="tabqh mgz" id="div_three">
+		<div id="lib_Tab1">
+			<div class="lib_Contentbox lib_tabborder">
+				<div id="content">
+					<p>在使用<span class="app_name">本应用</span>前，请您务必仔细阅读并透彻理解本申明。您可以选择不使用<span
+							class="app_name">本应用</span>，但如果您使用<span class="app_name">本应用</span>，您的使用行为将被视为对本申明全部内容的认可。
+					</p>
+					<p><span class="app_name">本应用</span>中的视频内容均为<span
+							class="app_name">本应用</span>以非人工检索方式、根据您键入或选择的关键字自动匹配上传者的记录，除<span
+							class="app_name">本应用</span>注明之服务条款外，其他一切因使用<span
+							class="app_name">本应用</span>面可能遭致的意外、疏忽、侵权及其造成的损失，<span
+							class="app_name">本应用</span>对其概不负责，亦不承担任何法律责任。</p>
+					<p>任何通过使用<span class="app_name">本应用</span>而搜索到的记录均系他人制作或提供，<span
+							class="app_name">本应用</span>对其合法性概不负责，亦不承担任何法律责任。同时所有剧集推介内容和图文均来自投稿申请并通过审核的用户，均归原作者或上传者及其网站所有。<span
+							class="app_name">本应用</span>不存储、不对任何做编辑和整理。</p>
+					<p><span class="app_name">本应用</span>搜索结果根据您键入或选择的关键字自动搜索获得并返回记录，您应该对使用搜索引擎的结果自行承担风险。<span
+							class="app_name">本应用</span>不做任何形式的保证：不保证搜索结果满足您的要求，不保证搜索服务不中断，不保证搜索结果的安全性、正确性、及时性、合法性。因网络状况、通讯线路等任何原因而导致您不能正常使用<span
+							class="app_name">本应用</span>，<span class="app_name">本应用</span>不承担任何法律责任。</p>
+					<p><span class="app_name">本应用</span>尊重并保护所有使用<span
+							class="app_name">本应用</span>用户的个人隐私权，您注册的用户名、电子邮件地址等个人资料，非经您亲自许可或根据相关法律、法规的强制性规定，<span
+							class="app_name">本应用</span>不会主动地泄露给第三方。<span
+							class="app_name">本应用</span>提醒您：您在使用搜索引擎时输入的关键字将不被认为是您的个人隐私资料。</p>
+					<p>任何单位或个人认为通过<span class="app_name">本应用</span>搜索链接到的第三方网页内容可能涉嫌侵犯其信息网络传播权，应该及时向<span
+							class="app_name">本应用</span>提出书面权利通知，并提供身份证明、权属证明及详细侵权情况证明。<span
+							class="app_name">本应用</span>在收到上述法律文件后，将会依法尽快断开相关链接内容。</p>
+					<p class="email_txt"></p>
+				</div>
+				<div class="buylist_menuz mgz"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+<script>
+    var  subject = {}
+    $(function(){
+		getBase()
+	  $('.app_name').text(name)
+	  let email = ''
+	  Object.keys(emailEnum).forEach(i => {
+		  if (i === appid) {
+			email = emailEnum[i]
+		  }
+	  })
+	  $('.email_txt').text('联系邮箱：' + email)
+    })
+</script>
+</html>

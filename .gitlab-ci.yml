@@ -1,0 +1,47 @@
+stages:
+  - pullsrc
+  - deploy
+
+######## 开发环境 #########
+# pullsrc_stage:
+#   stage: pullsrc
+#   only:
+#     - dev
+#   tags:
+#     - manhua-vue-runner
+#   script:
+#     - cd ~/Workspace/src/frontend/manhua_backend_vue
+#     - git checkout -- .
+#     - git pull
+
+# deploy_stage:
+#   stage: deploy
+#   only:
+#     - dev
+#   tags:
+#     - manhua-vue-runner
+#   script:
+#     - cd ~/Workspace/src/frontend/manhua_backend_vue
+#     - /bin/bash ./deploy_dev.sh
+
+######## 生产环境 #########
+pullsrc_prod:
+  stage: pullsrc
+  only:
+    - master
+  tags:
+    - manhua-vue-runner-prod
+  script:
+    - cd ~/Workspace/src/frontend/manhua_backend_vue
+    - git checkout -- .
+    - git pull
+
+deploy_prod:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - manhua-vue-runner-prod
+  script:
+    - cd ~/Workspace/src/frontend/manhua_backend_vue
+    - /bin/bash ./deploy.sh

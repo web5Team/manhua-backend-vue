@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 13px;
+        }
+
+        body {
+            font-size: 1.2rem;
+            background: #fff;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .box {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .txPic {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .name {
+            color: #333;
+            font-size: 1.6rem;
+            margin-top: 15px;
+            font-weight: 700;
+        }
+
+        .edition {
+            display: block;
+            color: #999;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .list {
+            display: flex;
+            -ms-flex-align: center;
+            -webkit-box-align: center;
+            box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            margin: 0 15px;
+            line-height: 44px;
+            border-bottom: 1px solid #F7F7F7;
+            color: #999;
+        }
+
+        .list p {
+            width: 100%;
+        }
+
+        .list img {
+            width: 7px;
+            height: 13px;
+        }
+
+        /* icon */
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box">
+            <img src="" class="txPic">
+            <p class="name"></p>
+            <span class="edition">版本：</span>
+        </div>
+        <div class="list" id="userAgreement">
+            <p>用户协议</p>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-right" ></use>
+            </svg>
+        </div>
+        <div class="list" id="privacyPolicy">
+            <p>隐私政策</p>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-right" ></use>
+            </svg>
+        </div>
+        <div class="list" id="copyrightNotice">
+            <p>版权声明</p>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-right" ></use>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/base64.js"></script>
+<script src="js/subject.js"></script>
+<script src="js/common.js"></script>
+<script>
+	// $(function() {
+	// 	$('.edition').text('版本：' + getQueryVariable('versioncode'))
+	// })
+	
+    
+    $(function(){
+    	getBase()
+        if(appid == 7 && platformid == 3) {
+            $('.txPic').attr('src', './img/logoIcon_73.png')
+        } else {
+            $('.txPic').attr('src', img)
+        }
+	    $('.edition').text(versioncode)
+	    $('.name').text(name)
+        // let params = Base64.encode(`a=${appid}&n=${name}&p=${platformid}`)
+        // 跳转用户协议
+        $('#userAgreement').click(function () {
+            window.location.href = `agreement.html?b=${paramB}`
+        })
+        // 跳转隐私协议
+        $('#privacyPolicy').click(function () {
+            window.location.href = `privacy.html?b=${paramB}`
+        })
+        // 跳转版权声明
+        $('#copyrightNotice').click(function () {
+            window.location.href = `statement.html?b=${paramB}`
+        })
+    })
+</script>
