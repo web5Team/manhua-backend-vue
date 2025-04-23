@@ -179,7 +179,7 @@ const contact = ref([
         <div class="home-registration-line-list">
           <div v-for="(_, index) in 3" :key="_" class="home-registration-line">
             <div
-              class="relative bg-[#cf0708] flex w-full justify-end items-center flex-col text-center relative h-[512px] max-2xl:h-[410px] max-xl:h-[341px] max-lg:h-[273px] max-md:h-[478px]"
+              class="relative bg-[#cf0708] rounded-2xl flex w-full justify-end items-center flex-col text-center relative h-[512px] max-2xl:h-[410px] max-xl:h-[341px] max-lg:h-[273px] max-md:h-[478px]"
             >
               <div
                 :class="index > 0 ? 'text-[#F0EDDD]' : 'text-[#25241E]'"
@@ -200,7 +200,6 @@ const contact = ref([
                   {{ t(`registration`) }}
                 </button>
               </div>
-
               <img
                 class="absolute mix-blend-hard-light z-1 w-full h-full absolute left-0 top-0"
                 :src="registrationImgUrl(index)"
