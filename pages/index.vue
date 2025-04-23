@@ -256,16 +256,16 @@ const contact = ref([
           {{ t("speakers-1") }}
         </div>
         <div
-          class="flex flex-wrap justify-center overflow-hidden w-[1920px] max-2xl:w-[1536px] max-xl:w-[1280px] max-md:w-[1024px] mt-[115px] max-2xl:mt-[96px] max-xl:mt-[57px] max-lg:mt-[43px] max-md:mt-[46px]"
+          class="flex flex-wrap justify-center overflow-hidden w-full mt-[115px] max-2xl:mt-[96px] max-xl:mt-[57px] max-lg:mt-[43px] max-md:mt-[46px]"
         >
           <div
             v-for="(_, index) in 18"
-            class="speakers relative w-[320px] h-[320px] max-2xl:w-[256px] max-2xl:h-[256px] max-xl:w-[213px] max-xl:h-[213px] max-lg:w-[170px] max-lg:h-[170px] max-md:w-[128px] max-md:h-[128px]"
+            class="speakers relative w-[calc(100%/6)] h-[calc(100vw/6)] max-2xl:w-[calc(100%/6)] max-2xl:h-[calc(100vw/6)] max-xl:w-[calc(100%/6)] max-xl:h-[calc(100vw/6)] max-lg:w-[calc(100%/6)] max-lg:h-[calc(100vw/6)] max-md:w-[calc(100%/3)] max-md:h-[calc(100vw/3)]"
             :key="index"
           >
             <img
               :src="speakersImgUrl(index)"
-              class="absolute top-0 mix-blend-hard-light w-[320px] h-[320px] max-2xl:w-[256px] max-2xl:h-[256px] max-xl:w-[213px] max-xl:h-[213px] max-lg:w-[170px] max-lg:h-[170px] max-md:w-[128px] max-md:h-[128px]"
+              class="absolute top-0 mix-blend-hard-light w-full h-full"
               alt=""
             />
           </div>
@@ -307,7 +307,7 @@ const contact = ref([
         </div>
 
         <div
-          class="bg-[#be0a0b] w-full flex-center flex-col mt-[102px] max-2xl:mt-[67px]"
+          class="bg-[#cf0708] w-full flex-center flex-col mt-[102px] max-2xl:mt-[67px]"
         >
           <div
             class="awards-text !text-[#fff] mt-[115px] max-2xl:mt-[96px] max-xl:mt-[57px] max-lg:mt-[43px] max-md:mt-[46px]"
@@ -370,7 +370,7 @@ const contact = ref([
 
     button {
       background: #be0a0b;
-      color: #f0eddd;
+      color: white;
       text-align: center;
       @apply font-black w-[251px] leading-[77px] max-2xl:w-[194px] max-2xl:leading-[60px] max-xl:w-[162px] max-xl:leading-[50px] max-lg:w-[130px] max-lg:leading-[40px] max-md:flex-1 max-md:w-full max-md:leading-[58px] text-[21px] max-2xl:text-[16px] max-xl:text-[13px] max-lg:text-[11px] max-md:text-[14px];
     }
@@ -518,11 +518,17 @@ const contact = ref([
     .partners {
       display: grid;
 
-      @apply grid-cols-7 w-[1316px] mt-[107px] gap-y-[36px] mb-[156px] max-2xl:w-[1053px] max-2xl:mt-[86px] max-2xl:gap-y-[29px] max-2xl:mb-[125px] max-xl:w-[877px] max-xl:mt-[71px] max-xl:gap-y-[24px] max-xl:mb-[105px] max-lg:w-[702px] max-lg:mt-[57px] max-lg:gap-y-[19px] max-lg:mb-[85px] max-md:w-full max-md:flex max-md:justify-center max-md:flex-wrap max-md:px-[36px] max-md:mt-[57px] max-md:gap-y-[27px] max-md:gap-x-[11px] max-md:mb-[147px];
+      @apply grid-cols-7 w-[1316px] mt-[107px] gap-y-[36px] mb-[156px] max-2xl:w-[1053px] max-2xl:mt-[86px] max-2xl:gap-y-[29px] max-2xl:mb-[125px] max-xl:w-[877px] max-xl:mt-[71px] max-xl:gap-y-[24px] max-xl:mb-[105px] max-lg:w-[702px] max-lg:mt-[57px] max-lg:gap-y-[19px] max-lg:mb-[85px] max-md:w-full max-md:px-[36px] max-md:mt-[57px] max-md:gap-y-[27px] max-md:gap-x-[11px] max-md:mb-[147px];
+
+      @media (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       button {
-        background-color: #be0a0b;
-        @apply flex justify-center border-solid border-white border-[1px] items-center w-[154px] h-[56px] py-[9px] rounded-[10px] px-[19px] max-2xl:w-[123px] max-2xl:h-[45px] max-2xl:py-[7px] max-2xl:rounded-[8px] max-2xl:px-[14px] max-xl:w-[103px] max-xl:h-[37px] max-xl:py-[6px] max-xl:rounded-[7px] max-xl:px-[12px] max-lg:w-[82px] max-lg:h-[30px] max-lg:py-[4px] max-lg:rounded-[5px] max-lg:px-[10px] max-md:w-[154px] max-md:h-[41px] max-md:py-[5px] max-md:rounded-[10px] max-md:px-[13px];
+        background-color: #cf0708;
+        @apply flex justify-center border-solid border-white border-[1px] items-center w-[154px] h-[56px] py-[9px] rounded-[10px] px-[19px] max-2xl:w-[123px] max-2xl:h-[45px] max-2xl:py-[7px] max-2xl:rounded-[8px] max-2xl:px-[14px] max-xl:w-[103px] max-xl:h-[37px] max-xl:py-[6px] max-xl:rounded-[7px] max-xl:px-[12px] max-lg:w-[82px] max-lg:h-[30px] max-lg:py-[4px] max-lg:rounded-[5px] max-lg:px-[10px] max-md:w-[154px] max-md:h-[41px] max-md:py-[5px] max-md:rounded-[10px] max-md:px-[13px] max-md:m-[5px];
 
         img {
           @apply max-h-full;

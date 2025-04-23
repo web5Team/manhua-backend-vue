@@ -73,7 +73,7 @@
 
           <img
             @click="toggleMenu"
-            src="@/assets/icons/menu.png"
+            src="@/assets/icons/menu.svg"
             class="w-[15px]"
             alt=""
           />
@@ -129,7 +129,7 @@ const toggleMenu = () => {
   z-index: 1999;
   // position: fixed;
   top: 0;
-  background-color: #be0a0b;
+  background-color: #cf0708;
   width: 100%;
   @apply h-[101px] max-2xl:h-[78px] max-xl:h-[65px] max-lg:h-[52px] max-md:h-[78px];
   @apply max-md:bg-[#111111];

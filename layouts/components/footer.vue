@@ -38,8 +38,8 @@ const menuList = [4, 3, 4, 1];
 </script>
 <style lang="scss" scoped>
 .footer {
-  color: #d7c87b;
-  background: #be0a0b;
+  // color: #d7c87b;
+  background: #cf0708;
   width: 100%;
   align-items: center;
   @apply flex justify-around px-[302px] h-[144px] text-[14px] max-2xl:px-[242px] max-2xl:h-[115px] max-2xl:text-[11px] max-xl:px-[201px] max-xl:h-[96px] max-xl:text-[9px] max-lg:px-[161px] max-lg:h-[77px] max-lg:text-[7px] max-md:flex-col max-md:py-[32px] max-md:px-0 max-md:h-[144px] max-md:text-[10px];
