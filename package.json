@@ -14,11 +14,13 @@
     "@nuxtjs/i18n": "^8.0.0-beta.13",
     "@pinia/nuxt": "^0.7.0",
     "@splinetool/viewer": "^1.9.46",
+    "@unhead/vue": "1.11.19",
     "nuxt": "^3.14.159",
     "nuxt-swiper": "^2.0.0",
     "pinia": "^2.2.6",
     "sass": "^1.80.6",
     "sass-loader": "^13.1.0",
+    "unhead": "1.11.19",
     "vue": "latest",
     "vue-router": "latest",
     "vue3-google-map": "^0.21.0"
