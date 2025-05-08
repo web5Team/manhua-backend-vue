@@ -10,7 +10,7 @@ module.exports = {
       max_memory_restart: '1G',
       env: {
         NODE_ENV: 'development',
-        VUE_APP_BASE_API: 'https:///manhua-adm.nftx.pics/api'
+        VUE_APP_BASE_API: 'https:///manhua-adm.nftx.pics'
       },
       env_staging: {
         NODE_ENV: 'staging',
